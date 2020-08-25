@@ -1,0 +1,1 @@
+'pw', 'pass', 'phone', 'credit', 'debit', 'card', 'id card', 'id number', 'tel.', 'телефонный номер', 'парол', 'номер', 'кредит', 'карта'

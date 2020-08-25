@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+
+  "name": "PII Checker",
+  "description": "This extension searches for PII in tickets",
+  "version": "1.0",
+  "icons":{
+    "16": "./icon16.png",
+    "32": "./icon32.png",
+    "48": "./icon48.png",
+    "128": "./icon128.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://epicgames.dixa.com/*"],
+      "run_at": "document_idle",
+      "css": ["myStyles.css"],
+      "js": ["contentScript.js"]
+    }
+  ],
+
+  "permissions": [
+    "tabs",
+    "https://epicgames.dixa.com/",
+    "https://telegra.ph/"
+  ]
+}
